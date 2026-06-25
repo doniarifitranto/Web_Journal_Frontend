@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  /* === MAIN COLOR === */
+  /* Penamaan disesuaikan dengan tingkat kegelapan agar mudah diingat */
+  --color-sage-100: #ccd9d3; /* Hijau pudar */
+  --color-sage-200: #b4c6be; /* Hijau keabu-abuan terang */
+  --color-sage-300: #b0d9c2; /* Hijau mint muda */
+  --color-sage-500: #5c8372; /* Hijau medium (Cocok untuk grafik/chart) */
+  --color-sage-700: #00642b; /* Hijau tajam (Aksen tegas) */
+  --color-sage-dark: #33483f; /* Hijau tua utama (Tombol Login, Sidebar, Teks utama) */
+
+  /* === STATUS COLOR === */
+  /* Diambil langsung dari sampel warna di gambar */
+  --color-status-burnout: #ff9b9b; /* Merah/Pink untuk status Burnout */
+  --color-status-healthy: #a6d8b6; /* Hijau muda untuk status Healthy */
+  --color-status-risk: #fde073; /* Kuning untuk status At risk */
+
+  /* === OTHERS === */
+  --color-mood-bg: #f8f8f8; /* Background utama aplikasi yang sangat bersih */
+  --color-neutral-border: #e4e7ec; /* Abu-abu untuk garis pembatas/border (gunakan dengan opacity/transparansi jika perlu) */
+  --color-text-dark: #1e1e1e; /* Hitam pekat untuk Heading / Judul */
+  --color-text-muted: #525967; /* Abu-abu slate untuk sub-teks / deskripsi */
+  --animate-fade-in: fade-in 0.6s ease-out forwards;
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Mengatur warna dasar seluruh halaman web */
+body {
+  background-color: var(--color-mood-bg);
+  color: var(--color-sage-dark);
+}
